@@ -2,18 +2,18 @@ import { themes as prismThemes } from 'prism-react-renderer';
 import type { Config } from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
-// Node.js runtime - do NOT use browser-specific APIs here
-
 const config: Config = {
   title: 'Physical AI & Humanoid Robotics Textbook',
   tagline: 'Bridging the digital brain and the physical body',
   favicon: 'img/favicon.ico',
 
-  url: 'https://github.com/Okashanadeem/', // Production URL
-  baseUrl: '/Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook/',
+  // Root domain only — no sub-path
+  url: 'https://okashanadeem.github.io', 
+  // Repository sub-path
+  baseUrl: '/GIAIC-Q4-Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook/',
 
   organizationName: 'Okashanadeem', // GitHub user/org
-  projectName: 'Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook', // Repo name
+  projectName: 'GIAIC-Q4-Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook', // Repo name
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
