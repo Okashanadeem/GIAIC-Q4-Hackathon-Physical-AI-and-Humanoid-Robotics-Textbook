@@ -72,6 +72,11 @@ function Chatbot() {
   return (
     <div className={styles.chatbotContainer}>
       <h3>Textbook Chatbot</h3>
+      {selectedText && (
+        <div className={styles.selectedTextIndicator}>
+          Context: "{selectedText}"
+        </div>
+      )}
       <form onSubmit={handleSubmit} className={styles.chatForm}>
         <input
           type="text"
@@ -82,7 +87,13 @@ function Chatbot() {
           disabled={loading}
         />
         <button type="submit" className={styles.chatButton} disabled={loading}>
-          {loading ? 'Thinking...' : 'Ask'}
+          {loading ? (
+            <>
+              Thinking... <span className={styles.loadingSpinner}></span>
+            </>
+          ) : (
+            'Ask'
+          )}
         </button>
       </form>
       {error && <p className={styles.errorMessage}>{error}</p>}

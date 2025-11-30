@@ -87,16 +87,16 @@ description: "Task list for Physical AI & Humanoid Robotics Textbook implementat
 
 - [X] T021 [US2] Unit test for Qdrant client connection and upsertion in `chatbot_backend/app/services/qdrant.py`.
 - [X] T022 [US2] Integration test for FastAPI RAG endpoint (simulating a query and verifying response format) in `chatbot_backend/tests/test_rag.py`.
-- [ ] T023 [US2] End-to-end test: Ask chatbot a question in the UI and verify response.
+- [X] T023 [US2] End-to-end test: Ask chatbot a question in the UI and verify response.
 
 ### Implementation for User Story 2
 
 - [X] T024 [US2] Develop content ingestion script (`scripts/ingest_docs.py`) to parse Docusaurus markdown and create embeddings with Gemini, then store in Qdrant.
 - [X] T025 [US2] Implement RAG service in `chatbot_backend/app/services/rag_service.py` (query Qdrant, call Gemini Chat, format response).
 - [X] T026 [US2] Create FastAPI endpoint `/chat` in `chatbot_backend/app/api/endpoints/chat.py` to expose RAG service.
-- [ ] T027 [P] [US2] Design and implement Docusaurus React component for chatbot UI in `src/components/Chatbot.js`.
-- [ ] T028 [US2] Integrate chatbot component into Docusaurus layout or specific pages (`src/theme/Layout/index.js`).
-- [ ] T029 [US2] Implement frontend logic to send selected text to the chatbot along with a query.
+- [X] T027 [P] [US2] Design and implement Docusaurus React component for chatbot UI in `src/components/Chatbot.js`.
+- [X] T028 [US2] Integrate chatbot component into Docusaurus layout or specific pages (`src/theme/Layout/index.js`).
+- [X] T029 [US2] Implement frontend logic to send selected text to the chatbot along with a query.
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 

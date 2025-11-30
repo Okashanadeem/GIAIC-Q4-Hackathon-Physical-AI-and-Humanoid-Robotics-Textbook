@@ -1,39 +1,45 @@
 # Introduction to Physical AI & Humanoid Robotics
 
-## The Future of Work: A Partnership with AI and Robots
+The future of work will increasingly involve seamless **collaboration between humans, intelligent agents (AI software), and robots**. This transformation will not eliminate jobs but will redefine human roles, creating a growing demand for new, specialized skills. This textbook is designed to provide a comprehensive foundation in **Physical AI and Humanoid Robotics**, equipping students with the knowledge and practical expertise to design, simulate, and control humanoid robots in both virtual and physical environments.
 
-The future of work will be a partnership between people, intelligent agents (AI software), and robots. This shift won't necessarily eliminate jobs but will change what humans do, leading to a massive demand for new skills. Our initiative, Panaversity, focuses on teaching cutting-edge AI courses, and we're developing a portal for AI-native technical textbooks.
+---
 
-## Physical AI & Humanoid Robotics: Course Overview
+## **Course Overview**
 
-This capstone course, "Physical AI & Humanoid Robotics," introduces AI systems that function in the physical world and comprehend physical laws. Students will learn to design, simulate, and deploy humanoid robots capable of natural human interactions using ROS 2, Gazebo, and NVIDIA Isaac.
+**Focus and Theme:**
+The course emphasizes **AI systems in the physical world** and the concept of **embodied intelligence**. Its primary goal is to bridge the gap between the **digital brain** and the **physical body**, enabling students to translate AI theory into real-world robotic applications.
 
-### Focus and Theme:
+**Capstone Quarter Objective:**
+This quarter focuses on **Physical AI**—AI systems that operate in the real world while respecting physical laws. Students will gain hands-on experience in designing, simulating, and deploying humanoid robots capable of **natural human-robot interactions**, leveraging advanced platforms such as **ROS 2**, **Gazebo**, and **NVIDIA Isaac**.
 
-*   AI Systems in the Physical World.
-*   Embodied Intelligence.
-*   Goal: Bridging the gap between the digital brain and the physical body. Students apply their AI knowledge to control Humanoid Robots in simulated and real-world environments.
+---
 
-### Why Physical AI Matters
+## **Module Overview**
 
-Humanoid robots are poised to excel in our human-centered world because they share our physical form and can be trained with abundant data from interacting in human environments. This represents a significant transition from AI models confined to digital environments to embodied intelligence that operates in physical space.
+| Module                                           | Focus                                       | Key Concepts                                                                                                                                                      |
+| ------------------------------------------------ | ------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Module 1: The Robotic Nervous System (ROS 2)** | Middleware for robot control                | ROS 2 Nodes, Topics, Services, bridging Python agents to ROS controllers using `rclpy`, URDF for humanoids                                                        |
+| **Module 2: The Digital Twin (Gazebo & Unity)**  | Physics simulation and environment building | Simulating physics, gravity, and collisions in Gazebo; high-fidelity rendering in Unity; simulating sensors (LiDAR, Depth Cameras, IMUs)                          |
+| **Module 3: The AI-Robot Brain (NVIDIA Isaac™)** | Advanced perception and training            | Isaac Sim (photorealistic simulation and synthetic data generation); Isaac ROS (hardware-accelerated VSLAM & navigation); Nav2 path planning for bipedal movement |
+| **Module 4: Vision-Language-Action (VLA)**       | Convergence of LLMs and Robotics            | Voice-to-Action with OpenAI Whisper, cognitive planning using LLMs to generate ROS 2 action sequences, capstone: Autonomous Humanoid                              |
 
-### Learning Outcomes
+---
 
-Upon completing this course, students will be able to:
+## **Why Physical AI Matters**
 
-1.  Understand Physical AI principles and embodied intelligence.
-2.  Master ROS 2 (Robot Operating System) for robotic control.
-3.  Simulate robots with Gazebo and Unity.
-4.  Develop with NVIDIA Isaac AI robot platform.
-5.  Design humanoid robots for natural interactions.
-6.  Integrate GPT models for conversational robotics.
+Humanoid robots are uniquely positioned to thrive in **human-centered environments**, sharing our physical form and leveraging abundant interaction data to learn complex behaviors. This represents a **paradigm shift from AI confined to digital environments to embodied intelligence**—AI capable of perceiving, reasoning, and acting in the physical world.
 
-## Course Modules
+---
 
-The course is divided into four key modules:
+## **Learning Outcomes**
 
-*   **Module 1: The Robotic Nervous System (ROS 2)**: Focuses on middleware for robot control, ROS 2 Nodes, Topics, Services, bridging Python Agents to ROS controllers using `rclpy`, and understanding URDF for humanoids.
-*   **Module 2: The Digital Twin (Gazebo & Unity)**: Covers physics simulation, environment building in Gazebo, high-fidelity rendering and human-robot interaction in Unity, and simulating sensors (LiDAR, Depth Cameras, IMUs).
-*   **Module 3: The AI-Robot Brain (NVIDIA Isaac™)**: Explores NVIDIA Isaac Sim for photorealistic simulation and synthetic data generation, Isaac ROS for hardware-accelerated VSLAM and navigation, and Nav2 for path planning for bipedal movement.
-*   **Module 4: Vision-Language-Action (VLA)**: Focuses on the convergence of LLMs and Robotics, including Voice-to-Action using OpenAI Whisper, cognitive planning with LLMs (translating natural language to ROS 2 actions), and a Capstone Project on Autonomous Humanoids.
+By the end of this course, students will be able to:
+
+1. Understand the principles of **Physical AI** and embodied intelligence.
+2. Master **ROS 2** for robot control and middleware integration.
+3. Simulate and visualize robots using **Gazebo** and **Unity**.
+4. Develop AI-powered robotic applications on the **NVIDIA Isaac** platform.
+5. Design humanoid robots capable of **natural and intuitive interactions**.
+6. Integrate **GPT models** to create conversational robotic systems.
+
+---

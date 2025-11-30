@@ -3,7 +3,8 @@ name: Deploy Docusaurus to GitHub Pages
 on:
   push:
     branches:
-      - main # Set this to your default branch
+      - main
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -14,17 +15,18 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 18
           cache: npm
+          cache-dependency-path: website/package-lock.json
 
       - name: Install dependencies
         run: npm install
         working-directory: website
 
-      - name: Build Docusaurus website
+      - name: Build Docusaurus
         run: npm run build
         working-directory: website
 
@@ -33,4 +35,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./website/build
-          # CNAME: your-custom-domain.com # Uncomment if you have a custom domain
+          # For a project with a custom domain, use `cname: CNAME`
+          # cname: 'example.com'

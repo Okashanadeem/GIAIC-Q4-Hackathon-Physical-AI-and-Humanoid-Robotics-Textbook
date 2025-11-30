@@ -1,47 +1,64 @@
----
-sidebar_position: 1
----
+## sidebar_position: 1
 
 # Tutorial Intro
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Learn how to explore **Docusaurus in under 5 minutes** and get a basic site running.
 
-## Getting Started
+---
 
-Get started by **creating a new site**.
+## **Getting Started**
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+Begin by **creating a new site**.
 
-### What you'll need
+Alternatively, you can **try Docusaurus instantly** using **[docusaurus.new](https://docusaurus.new)**.
 
-- [Node.js](https://nodejs.org/en/download/) version 20.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+---
 
-## Generate a new site
+### **What You’ll Need**
 
-Generate a new Docusaurus site using the **classic template**.
+* [Node.js](https://nodejs.org/en/download/) version **20.0 or above**
 
-The classic template will automatically be added to your project after you run the command:
+  * During installation, it is recommended to select all checkboxes related to dependencies.
+
+---
+
+## **Generate a New Site**
+
+Create a new Docusaurus site using the **classic template**. The template will automatically set up your project with default configurations.
+
+Run the following command in your terminal (Command Prompt, PowerShell, or your editor’s integrated terminal):
 
 ```bash
 npm init docusaurus@latest my-website classic
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+> This command installs all necessary dependencies required to run your Docusaurus site.
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+---
 
-## Start your site
+## **Start Your Site**
 
-Run the development server:
+After generating the site, start the development server:
 
 ```bash
 cd my-website
 npm run start
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+* The `cd my-website` command navigates into your project directory.
+* The `npm run start` command builds your site locally and serves it through a development server.
+* Open your browser at [http://localhost:3000/](http://localhost:3000/) to view the site.
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+---
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+### **Editing Docs**
+
+Open `docs/intro.md` (this page) and modify any text.
+Your site **reloads automatically**, reflecting changes immediately.
+
+---
+
+✅ **Tip:**
+This process gives you a fully functional Docusaurus site in minutes, ready for content creation, documentation, or tutorials.
+
+---

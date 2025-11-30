@@ -5,12 +5,12 @@
 
 ## Summary
 
-This plan outlines the architecture and implementation steps for creating a Physical AI & Humanoid Robotics Textbook. The project involves building a Docusaurus-based book, integrating a Retrieval-Augmented Generation (RAG) chatbot using FastAPI, OpenAI Agents/ChatKit SDKs, Neon Serverless Postgres, and Qdrant Cloud. Additionally, it details the implementation of bonus features such as reusable Claude Code intelligence, user authentication via better-auth.com, content personalization, and Urdu translation.
+This plan outlines the architecture and implementation steps for creating a Physical AI & Humanoid Robotics Textbook. The project involves building a Docusaurus-based book, integrating a Retrieval-Augmented Generation (RAG) chatbot using FastAPI, Gemini API, Neon Serverless Postgres, and Qdrant Cloud. Additionally, it details the implementation of bonus features such as reusable Claude Code intelligence, user authentication via better-auth.com, content personalization, and Urdu translation.
 
 ## Technical Context
 
 **Language/Version**: TypeScript (for Docusaurus frontend), Python 3.10+ (for FastAPI backend and Claude Code agents)
-**Primary Dependencies**: Docusaurus, React, OpenAI Agents/ChatKit SDKs, FastAPI, SQLAlchemy, Neon Postgres driver, Qdrant Client, better-auth.com SDK (if available or direct API integration)
+**Primary Dependencies**: Docusaurus, React, Gemini API, FastAPI, SQLAlchemy, Neon Postgres driver, Qdrant Client, better-auth.com SDK (if available or direct API integration)
 **Storage**: Neon Serverless Postgres (for user data, personalization settings), Qdrant Cloud (for vector embeddings of book content)
 **Testing**: Jest/React Testing Library (for Docusaurus components), Pytest (for FastAPI backend and agents), potentially Playwright/Cypress for E2E tests.
 **Target Platform**: Web (Docusaurus deployed on GitHub Pages), Serverless (FastAPI backend)
@@ -20,7 +20,7 @@ This plan outlines the architecture and implementation steps for creating a Phys
 - Chatbot responses within 5 seconds (p95).
 - User authentication/personalization actions within 3 seconds (p95).
 **Constraints**:
-- Must use specified technologies: Docusaurus, GitHub Pages, Claude Code, Spec-Kit Plus, OpenAI Agents/ChatKit, FastAPI, Neon Serverless Postgres, Qdrant Cloud Free Tier, better-auth.com.
+- Must use specified technologies: Docusaurus, GitHub Pages, Claude Code, Spec-Kit Plus, Gemini API, FastAPI, Neon Serverless Postgres, Qdrant Cloud Free Tier, better-auth.com.
 - Chatbot must answer questions *only* from book content.
 - Bonus features should be optional but integrated gracefully.
 **Scale/Scope**: Single textbook deployment, designed for educational use. Initial scope targets ~1000 active users, with consideration for future scaling.

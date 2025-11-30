@@ -18,15 +18,15 @@ const config: Config = {
   },
 
   // Set the production url of your site here
-  url: 'https://panaversity.github.io',
+  url: 'https://github.com/Okashanadeem/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/my-research-paper/',
+  baseUrl: '/Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'panaversity', // Usually your GitHub org/user name.
-  projectName: 'my-research-paper', // Usually your repo name.
+  organizationName: 'Okashanadeem', // Usually your GitHub org/user name.
+  projectName: 'Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook', // Usually your repo name.
 
   onBrokenLinks: 'throw',
 
@@ -47,7 +47,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/panaversity/my-research-paper/tree/main/website/',
+            'https://github.com/Okashanadeem/GIAIC-Q4-Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook',
         },
         blog: {
           showReadingTime: true,
@@ -58,7 +58,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/panaversity/my-research-paper/tree/main/website/',
+            'https://github.com/Okashanadeem/GIAIC-Q4-Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -91,7 +91,7 @@ const config: Config = {
           label: 'Textbook',
         },
         {
-          href: 'https://github.com/panaversity/my-research-paper',
+          href: 'https://github.com/Okashanadeem/GIAIC-Q4-Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook',
           label: 'GitHub',
           position: 'right',
         },
@@ -114,12 +114,12 @@ const config: Config = {
           items: [
             {
               label: 'GitHub',
-              href: 'https://github.com/panaversity/my-research-paper',
+              href: 'https://github.com/Okashanadeem/GIAIC-Q4-Hackathon-Physical-AI-and-Humanoid-Robotics-Textbook',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Panaversity. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Okasha Nadeem. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,

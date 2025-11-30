@@ -35,7 +35,7 @@ As a student, I want an integrated RAG chatbot within the textbook to answer que
 
 1.  **Given** the RAG chatbot is embedded in the Docusaurus book, **When** a user asks a question about a topic covered in the book, **Then** the chatbot provides a relevant and accurate answer.
 2.  **Given** a user has selected a portion of text in the book, **When** they ask the chatbot a question related to the selected text, **Then** the chatbot prioritizes answers based on the selected context.
-3.  **Given** the chatbot uses OpenAI Agents/ChatKit SDKs, FastAPI, Neon Serverless Postgres, and Qdrant Cloud, **When** it receives a query, **Then** it processes the query and retrieves information efficiently from the book's content.
+3.  **Given** the chatbot uses Gemini API, FastAPI, Neon Serverless Postgres, and Qdrant Cloud, **When** it receives a query, **Then** it processes the query and retrieves information efficiently from the book's content.
 
 ---
 
@@ -117,7 +117,7 @@ As a logged-in student, I want to translate the content of the textbook chapters
 - **FR-004**: The system MUST embed a Retrieval-Augmented Generation (RAG) chatbot within the published book.
 - **FR-005**: The RAG chatbot MUST be able to answer questions based on the book's content.
 - **FR-006**: The RAG chatbot MUST support answering questions based on text selected by the user.
-- **FR-007**: The RAG chatbot MUST use OpenAI Agents/ChatKit SDKs for agent functionality.
+- **FR-007**: The RAG chatbot MUST use Gemini API for agent functionality.
 - **FR-008**: The RAG chatbot MUST use FastAPI for its backend.
 - **FR-009**: The RAG chatbot MUST use Neon Serverless Postgres for its database.
 - **FR-010**: The RAG chatbot MUST use Qdrant Cloud Free Tier for its vector database.

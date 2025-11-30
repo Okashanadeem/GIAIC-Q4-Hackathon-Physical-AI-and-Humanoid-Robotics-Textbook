@@ -1,5 +1,5 @@
 import os
-# import google.generativeai as genai # Removed redundant import
+import google.generativeai as genai
 from typing import List, Dict, Any
 
 from qdrant_client.http.models import Filter, FieldCondition, MatchValue
@@ -51,8 +51,6 @@ async def retrieve_context_from_qdrant(query_embedding: List[float], collection_
     return context
 
 async def generate_rag_response(user_query: str, collection_name: str, selected_text: str = None) -> str:
-    if not GEMINI_API_KEY:
-        return "Chatbot is not configured. Please provide the GEMINI_API_KEY."
 
     gemini_model = get_gemini_model()
     if not gemini_model:
