@@ -1,0 +1,55 @@
+.chatbotContainer {
+  margin-top: 2rem;
+  padding: 1rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.chatbotContainer h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.chatForm {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.chatInput {
+  flex-grow: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.chatButton {
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chatButton:disabled {
+  background-color: #a0c9ff;
+  cursor: not-allowed;
+}
+
+.errorMessage {
+  color: red;
+  margin-bottom: 1rem;
+}
+
+.chatResponse {
+  background-color: #e9ecef;
+  padding: 1rem;
+  border-radius: 4px;
+}
+
+.chatResponse h4 {
+  margin-top: 0;
+  color: #555;
+}

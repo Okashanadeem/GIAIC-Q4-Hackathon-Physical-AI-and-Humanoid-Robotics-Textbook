@@ -1,55 +1,39 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# Physical AI & Humanoid Robotics Textbook Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Spec-Driven Development
+All project components, from the textbook content to the chatbot, will be developed using a strict spec-driven methodology. We will use Spec-Kit Plus to define specifications and Claude Code to drive the implementation, ensuring every piece of work is traceable to a requirement.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. AI-Native Content and Tooling
+The project must be "AI-native." The textbook will be augmented with an integrated RAG chatbot to create an interactive learning experience. Development itself will be AI-driven, utilizing Claude Code agents and skills.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Docusaurus for Content, GitHub Pages for Deployment
+The textbook will be built using Docusaurus for a modern, maintainable documentation site. All content will be hosted and deployed via GitHub Pages for continuous integration and public accessibility.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Integrated RAG Chatbot
+A core deliverable is an embedded Retrieval-Augmented Generation (RAG) chatbot. It must be capable of answering user questions based on the book's content. The specified technical stack (OpenAI Agents/ChatKit SDKs, FastAPI, Neon Serverless Postgres, Qdrant) is mandatory.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Reusable Intelligence
+We will prioritize the creation of reusable intelligence. This will be implemented by developing Claude Code Subagents and Agent Skills. This approach is not only for bonus points but also for building a foundation for future projects.
 
-### [PRINCIPLE_6_NAME]
+### VI. User-Centric Features
+While optional, building user-centric features is highly encouraged. This includes user authentication (Signup/Signin), content personalization based on user background, and translation capabilities to broaden accessibility.
 
+## Technical Stack Requirements
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+The following technologies are mandated for the project:
+- **Book Framework:** Docusaurus
+- **Deployment:** GitHub Pages
+- **Development Tool:** Claude Code with Spec-Kit Plus
+- **Chatbot Backend:** FastAPI
+- **Chatbot SDKs:** OpenAI Agents/ChatKit
+- **Database:** Neon Serverless Postgres
+- **Vector Store:** Qdrant Cloud (Free Tier)
+- **Authentication:** better-auth.com
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This Constitution serves as the guiding document for the project. All development work, pull requests, and reviews must align with these principles. Any deviation requires discussion and a documented amendment to this constitution.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0 | **Ratified**: 2025-11-30 | **Last Amended**: 2025-11-30
